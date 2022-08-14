@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<robot >
+    <!-- end of link list -->
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
+
+    <!-- joint list -->
+   <joint name="joint_1" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0" lower="-3.1416" upper="3.1416" velocity="2.618"/>
+  </joint>
+
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 0 0" xyz="0.070 0 0.352"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="-1.7453" upper="1.7453" velocity="2.618"/>
+  </joint>
+
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.065 0.360"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="-2.4434" upper="2.4434" velocity="2.618"/>
+  </joint>
+
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 0 0" xyz="0.239 0.065 0"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="-3.49" upper="3.49" velocity="6.2832"/>
+  </joint>
+
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 0 0" xyz="0.141 0 0"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="-2.0071" upper="2.0071" velocity="6.2832"/>
+  </joint>
+
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 0 0" xyz="0.065 0 0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="0" lower="-6.9813" upper="6.9813" velocity="7.854"/>
+  </joint>
+  
+  <joint name="joint_6-tool0" type="fixed">
+    <parent link="link_6"/>
+    <child link="tool0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+
+    <joint name="camera_joint" type="fixed">
+    <parent link="link_6"/>
+    <child link="camera_link"/>
+    <origin rpy="0 0.85 0" xyz="0.01 0 0"/>
+  </joint>
+  
+
+    <!-- end of joint list -->
+
+    <!-- ROS base_link to ABB World Coordinates transform -->
+    <link name="base" />
+    <joint name="base_link-base" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="base"/>
+    </joint>
+</robot> 
