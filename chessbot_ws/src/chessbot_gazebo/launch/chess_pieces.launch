@@ -1,0 +1,27 @@
+<launch>
+    
+    
+    
+
+    <!-- Gazebo Files  -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <!--  <arg name="world_name" value="$(arg my_world)"/>  Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable --> >-->
+        <arg name="paused" value="true"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="recording" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+
+  <arg name="model_name" value = "pawn" /> 
+  
+  <node name="piece_spawner_test" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-sdf -model pawn_b -file $(find chessbot_gazebo)/models/$(arg model_name)/model.sdf -x 0.34 -z 1 -Y 3.14"/> />
+
+   <node name="piece_spawner_test_2" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-sdf -model pawn_2 -file $(find chessbot_gazebo)/models/$(arg model_name)/model.sdf -x 0.84 -z 1 -Y 3.14"/> />
+
+  
+  
+</launch> 
