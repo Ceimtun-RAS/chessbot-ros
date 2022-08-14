@@ -1,0 +1,7 @@
+<launch> 
+    <arg name="urdf_path" value="$(find chessbot_robot)/urdf"/>
+    <arg name="input_path" value="$(arg urdf_path)/irb140.xacro"/>
+    <arg name="output_path" value="$(arg urdf_path)/urdf_build/irb140.urdf"/>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(arg input_path) -o $(arg output_path)" />
+</launch> 
