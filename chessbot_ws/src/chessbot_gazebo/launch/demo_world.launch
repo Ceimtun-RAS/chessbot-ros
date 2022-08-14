@@ -2,7 +2,9 @@
     <arg name="my_world" value="$(find chessbot_gazebo)/worlds/chess_default.world"/>
     
     <!-- Nodes Definition -->
-     
+
+     <!-- <node pkg="chessbot_gazebo" type="spawner" name="model_spawner"/>  -->
+
 
     <!-- Gazebo Files  -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -14,9 +16,11 @@
         <arg name="debug" value="false"/>
     </include>
 
-    <arg name="model_name" value = "pawn" /> 
-     <param name="robot_description" command="xacro $(find chessbot_robot)/urdf/irb140.xacro" />
+    <param name="chess_sim/pawn_description" textfile="$(find chessbot_gazebo)/models/pawn/model.sdf"/>
+    
+    <param name="robot_description" command="xacro $(find chessbot_robot)/urdf/irb140.xacro" />
 
     <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" output="screen"
      args="-urdf -model robot_abb_140 -param robot_description -x 0.35 -z 1 -Y 3.14"/> 
+
 </launch> 
