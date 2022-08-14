@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot>
+ <!-- <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+      
+      <material name="yellow">
+        <color rgba="0 1 1 1"/>
+      </material> -->
+
+
+  <!-- Link1 -->
+  <gazebo reference="{prefix}link_1">
+     <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+  </gazebo>
+
+  <!-- Link2 -->
+  <gazebo reference="{prefix}link_2">
+    <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+  </gazebo>
+
+  <!-- Link3 -->
+  <gazebo reference="{prefix}link_3">
+     <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+  </gazebo>
+
+ 
+
+</robot>
