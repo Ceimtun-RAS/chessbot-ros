@@ -16,6 +16,10 @@ Launch the base environment
 ```
 $ roslaunch chessbot_gazebo demo_world.launch
 ```
+You should see something like this
+![simulation demo world image](https://github.com/Ceimtun-RAS/chessbot-ros/blob/docs/docs/imgs/base_demo_world.png)
+
+
 
 
 ## Used Versions 
