@@ -8,7 +8,7 @@
 
     <arg name="model" value="$(arg urdf_path)/$(arg urdf_name)"/>
 
-    <param name="robot_description" command="$(find xacro)/xacro $(arg model) " />
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model) -q " />
     <param name="use_gui" value="$(arg gui)"/>
 
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />

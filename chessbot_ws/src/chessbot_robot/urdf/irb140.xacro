@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
 
 <robot name="abb_irb140" xmlns:xacro="http://ros.org/wiki/xacro">
-    
-	<xacro:include filename="$(find chessbot_robot)/urdf/irb140_macro.xacro"/>
 
-	<xacro:include filename="$(find chessbot_robot)/urdf/irb140.gazebo"/>
-	<xacro:abb_irb140 prefix=""/>
+	<xacro:include filename="$(find chessbot_robot)/urdf/robot/irb140_robot.xacro"/>
+	<xacro:include filename="$(find chessbot_robot)/urdf/gazebo/camera_sensor.gazebo"/>
+	<gazebo>
+    	<static>true</static>
+	</gazebo>
 </robot>

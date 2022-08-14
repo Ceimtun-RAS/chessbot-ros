@@ -1,15 +1,10 @@
 <launch>
     <arg name="my_world" value="$(find chessbot_gazebo)/worlds/chess_default.world"/>
-    
-    <!-- Nodes Definition -->
-
-     <!-- <node pkg="chessbot_gazebo" type="spawner" name="model_spawner"/>  -->
-
 
     <!-- Gazebo Files  -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg my_world)"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
-        <arg name="paused" value="true"/>
+        <arg name="paused" value="false"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>
         <arg name="recording" value="false"/>
