@@ -5,7 +5,9 @@
 <br />
 <div align="center">
   <a href="https://github.com/Ceimtun-RAS/chessbot-ros/">
+
     <img src="https://github.com/Ceimtun-RAS/chessbot-ros/tree/docs/imgs/github_frame.png" alt="Logo" width="80" height="80">
+
 
   </a>
 
