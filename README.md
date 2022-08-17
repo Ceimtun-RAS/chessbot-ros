@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Ceimtun-RAS/chessbot-ros/">
-    <img src="https://github.com/Ceimtun-RAS/chessbot-ros/docs/imgs/github_frame.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/Ceimtun-RAS/chessbot-ros/tree/docs/imgs/github_frame.png" alt="Logo" width="80" height="80">
 
   </a>
 
@@ -20,19 +20,13 @@
   </p>
 </div>
 
-<<<<<<< HEAD
-<div align = "center">
-![](https://img.shields.io/badge/state-working-45EF23)
-![](https://img.shields.io/badge/real_implementation-planning-FFEF23)
-![](https://img.shields.io/badge/release-none-FF2223)
-</div>
-=======
+
 
 ![](https://img.shields.io/badge/state-working-45EF23)
 ![](https://img.shields.io/badge/real_implementation-planning-FFEF23)
 ![](https://img.shields.io/badge/release-none-FF2223)
 
->>>>>>> bc8fb6aabf2e5b0bfff07abb058a64b4d383aafc
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
