@@ -9,7 +9,10 @@
 
 <img src="https://github.com/Ceimtun-RAS/chessbot-ros/tree/docs/docs/imgs/github_frame.png" alt="Logo" width="80" height="80" />
 
+
   </a>
+  
+  ![Logo](https://github.com/Ceimtun-RAS/chessbot-ros/tree/docs/docs/imgs/github_frame.png) 
 
   <h3 align="center">Chessbot Project</h3>
 
