@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/chessbot</robotNamespace>
+    </plugin>
+  </gazebo>
+
+  <!-- Transmision Gazebo Joint 1  -->
+  <transmission name="B2J2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor1">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+    <joint name="joint_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+ <!-- Transmision Gazebo Joint 1  -->
+  <transmission name="J2toJ3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor1">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+    <joint name="joint_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+   <!-- Transmision Gazebo Joint 1  -->
+  <transmission name="J3toJ4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor1">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </actuator>
+    <joint name="joint_3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+</robot>

@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find chessbot_robot)/urdf/robot/links.xacro"/>
-  <xacro:include filename="$(find chessbot_robot)/urdf/robot/joints.xacro"/> 
-  <static>true</static>
+  <xacro:include filename="$(find chessbot_robot)/urdf/robot/joints.xacro"/>
+  <xacro:include filename="$(find chessbot_robot)/urdf/robot/actuators.xacro"/>
+  <!-- TODO: moverl los motores del robot  -->
+  <static>false</static>
+
 </robot>

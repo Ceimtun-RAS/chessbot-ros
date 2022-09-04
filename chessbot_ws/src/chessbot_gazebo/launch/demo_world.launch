@@ -4,7 +4,7 @@
     <!-- Gazebo Files  -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(arg my_world)"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
-        <arg name="paused" value="false"/>
+        <arg name="paused" value="true"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>
         <arg name="recording" value="false"/>
@@ -16,6 +16,8 @@
     <param name="robot_description" command="xacro $(find chessbot_robot)/urdf/irb140.xacro" />
 
     <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" output="screen"
-     args="-urdf -model robot_abb_140 -param robot_description -x 0.35 -z 1 -Y 3.14"/> 
+     args="-urdf -model robot_abb_140 -param robot_description -x 0.35 -z 1 -Y 3.14"/>
+
+    <!-- <node name ="controller" pkg = "controller_manager" type ="spawner" output = "screen" nm = "chessbot/" args = "joint1_position_controller joint_state_controller" /> -->
 
 </launch> 
